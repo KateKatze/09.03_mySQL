@@ -1,1 +1,2 @@
+-- SQL Query 1
 SELECT family_members.fm_id, reading_status.read_status, book_title.name FROM family_members INNER JOIN reading_status ON family_members.fm_id = reading_status.fk_fm_id JOIN book_title on reading_status.fk_book_id = book_title.book_id;
